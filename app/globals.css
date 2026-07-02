@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist), system-ui, sans-serif;
+  --font-serif: var(--font-instrument), Georgia, serif;
+
+  --color-background: #f9f9fb;
+  --color-foreground: #0f172a;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  --color-muted: #f1f2f6;
+  --color-muted-foreground: #64748b;
+  --color-primary: #0f172a;
+  --color-primary-foreground: #ffffff;
+  --color-accent: #d25454;
+  --color-accent-foreground: #ffffff;
+  --color-border: #e6e8ee;
+  --color-ring: #d25454;
+  --color-success: #1d8a5f;
+  --color-warning: #b8860b;
+
+  --radius: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphic panel token per REQ-001 */
+.glass {
+  background: rgb(255 255 255 / 0.4);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgb(255 255 255 / 0.6);
+}
+
+.glass-solid {
+  background: rgb(255 255 255 / 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgb(230 232 238 / 0.8);
+}
+
+::selection {
+  background: #d25454;
+  color: #ffffff;
+}
